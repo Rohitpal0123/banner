@@ -1,19 +1,16 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './index.css';
-import './App.css';
-import BannerForm from './components/BannerForm';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Banner from './components/Banner';
+import BannerForm from './components/BannerForm';
 
 function App() {
   return (
-    <>
-      <Banner />
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Banner />} />
+        <Route path="/banner-controls" element={<BannerForm />} />
+      </Routes>
+    </Router>
   );
 }
 
