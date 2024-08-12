@@ -61,7 +61,7 @@ function BannerForm() {
         visibility: inputs.visibility, // Use the visibility value from state
       };
 
-      fetch("http://localhost:8316/banner/add", {
+      fetch("https://livebanner.onrender.com/banner/add", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -38,7 +38,7 @@ const Banner = () => {
 
     fetchBannerData();
 
-    const socket = io("http://localhost:8316", {
+    const socket = io("https://livebanner.onrender.com", {
       transports: ["websocket", "polling"],
     });
 
