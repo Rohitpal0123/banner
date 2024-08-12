@@ -27,7 +27,7 @@ const Banner = () => {
     // Fetch banner data from the backend on initial load
     const fetchBannerData = async () => {
       try {
-        const response = await fetch("https://livebanner.onrender.com"); // Adjust the URL as per your backend route
+        const response = await fetch("https://livebanner.onrender.com/get"); // Adjust the URL as per your backend route
         const data = await response.json();
         setBannerData(data);
         calculateTimeLeft(data.endTime);
