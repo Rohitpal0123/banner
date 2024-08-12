@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg';
 import './index.css';
 import './App.css';
 import BannerForm from './components/BannerForm';
-import Seawave from './components/seawave';
 import Banner from './components/Banner';
 
 function App() {
